@@ -6,6 +6,10 @@ import AddIcon from '@mui/icons-material/Add';
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import CallIcon from '@mui/icons-material/Call';
+import { Avatar } from '@mui/material';
+import MicIcon from '@mui/icons-material/Mic';
+import HeadsetIcon from '@mui/icons-material/Headset';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 function Sidebar(){
     return(
@@ -41,6 +45,18 @@ function Sidebar(){
                 <div className="sidebar_voiceIcons">
                     <InfoOutlinedIcon />
                     <CallIcon />
+                </div>
+            </div>
+            <div className="sidebar_profile">
+                <Avatar />
+                <div className="sidebar_profileInfo">
+                    <h3>@Jacob</h3>
+                    <p>#idplaceholder</p>
+                </div>
+                <div className="sidebar_profileIcons">
+                    <MicIcon />
+                    <HeadsetIcon />
+                    <SettingsIcon />
                 </div>
             </div>
         </div>
