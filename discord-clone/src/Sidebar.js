@@ -3,6 +3,9 @@ import "./Sidebar.css";
 import SidebarChannel from './SidebarChannel';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
+import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import CallIcon from '@mui/icons-material/Call';
 
 function Sidebar(){
     return(
@@ -24,6 +27,20 @@ function Sidebar(){
                     <SidebarChannel />
                     <SidebarChannel />
                     <SidebarChannel />
+                </div>
+            </div>
+            <div className="sidebar_voice">
+                <SignalCellularAltIcon
+                    className="sidebar_voiceIcon"
+                    fontSize="large"
+                />
+                <div className="sidebar_voiceInfo">
+                    <h3>Voice Connected</h3>
+                    <p>Stream</p>
+                </div>
+                <div className="sidebar_voiceIcons">
+                    <InfoOutlinedIcon />
+                    <CallIcon />
                 </div>
             </div>
         </div>
