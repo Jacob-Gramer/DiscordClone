@@ -1,10 +1,13 @@
 import React from 'react';
+import { auth, provider } from './firebase.js';
 import { Button } from '@mui/material';
 import './Login.css';
 
 function Login() {
     const signIn = () => {
         // do clever google shit
+        auth.signInWithPopup(provider)
+            .catch(err => alert(err.message));
     }
     return (
         <div className="login">
