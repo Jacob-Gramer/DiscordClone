@@ -15,7 +15,7 @@ function ChatHeader({ channelName }) {
                     <span className="chatHeader_hash">
                         #
                     </span>
-                    {channelName}
+                    {channelName ? channelName : 'Main Lobby'}
                 </h3>
             </div>
             <div className="chatHeader_right">
